@@ -1,0 +1,71 @@
+/* =========================
+   Quote Filters
+   ========================= */
+
+.quote-filter-button-primary {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.quote-filter-button-secondary {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--primary);
+  background: white;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.quote-filter-button-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* if two or more buttons in this class, if one of
+the secondaries is hover, primary will be set to secondary*/
+.filter-container:has(.quote-filter-button-secondary:hover)
+  .quote-filter-button-primary {
+  background: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.quote-filters-style {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  justify-content: start;
+}
+
+.label-with-help {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.help-tip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: help;
+}
+
+.help-tip:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--accent-soft);
+}

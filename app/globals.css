@@ -1,0 +1,21 @@
+@import "./styles/foundations.css";
+@import "./styles/animations.css";
+@import "./styles/links.css";
+@import "./styles/mobile-menu.css";
+@import "./styles/icon-buttons.css";
+@import "./styles/cards.css";
+@import "./styles/buttons.css";
+@import "./styles/layout.css";
+@import "./styles/forms.css";
+@import "./styles/pdf-preview.css";
+@import "./styles/global-components.css";
+@import "./styles/quote-filters.css";
+@import "./styles/calculations.css";
+
+/* Hide development overlay / badges */
+nextjs-portal,
+[data-nextjs-toast],
+[data-nextjs-dev-tools],
+#nextjs-dev-overlay {
+  display: none !important;
+}

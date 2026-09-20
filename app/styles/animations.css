@@ -1,0 +1,40 @@
+/* =========================
+   Animations
+   ========================= */
+
+@keyframes waveFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(1deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.logo-wave:hover {
+  animation: waveFloat 0.7s ease-in-out;
+}
+
+@keyframes mobileMenuReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

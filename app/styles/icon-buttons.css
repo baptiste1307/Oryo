@@ -1,0 +1,82 @@
+/* =========================
+   Icon Buttons
+   ========================= */
+
+.trash-link {
+  display: inline-block;
+  color: var(--muted);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  /* Align trash icon with adjacent text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash-link:hover {
+  color: var(--danger);
+  transform: scale(1.06) translateY(-1px);
+}
+
+.favorite-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.favorite-link:hover {
+  color: var(--primary);
+  transform: scale(1.06) translateY(-1px);
+}
+
+.edit-link {
+  display: inline-block;
+  color: var(--muted);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  /* Align action icon with adjacent text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-link:hover {
+  color: var(--primary);
+  transform: scale(1.06) translateY(-1px);
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
