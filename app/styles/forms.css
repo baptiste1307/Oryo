@@ -1,0 +1,160 @@
+/* =========================
+   Forms
+   ========================= */
+
+.input {
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #d9d4ca;
+  border-radius: var(--radius-sm);
+  background: white;
+  color: var(--text);
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.12);
+}
+
+.input[aria-invalid="true"],
+.input:user-invalid {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.12);
+}
+
+.form-message {
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.form-message-error,
+[role="alert"] {
+  color: var(--danger) !important;
+}
+
+.form-message-success {
+  color: var(--success);
+}
+
+.form-message-info {
+  color: var(--muted);
+}
+
+.confirmation-email-content {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+}
+
+.confirmation-email-icon {
+  display: grid;
+  place-items: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--primary);
+}
+
+.confirmation-email-hint {
+  font-size: 0.92rem;
+}
+
+.confirmation-email-actions {
+  justify-content: center;
+}
+
+.account-danger-actions {
+  margin-top: 10px;
+}
+
+.password-input-wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.password-input {
+  padding-right: 46px;
+}
+
+.password-visibility-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+}
+
+.password-visibility-button:hover,
+.password-visibility-button:focus-visible {
+  color: var(--primary);
+  background: var(--accent-soft);
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+textarea.input {
+  overflow-wrap: anywhere;
+}
+
+input[type="range"] {
+  accent-color: var(--primary);
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary);
+}
+
+.editable-display-value {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.editable-display-value:hover {
+  color: var(--primary);
+}

@@ -1,0 +1,28 @@
+/* =========================
+   Cards
+   ========================= */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(20px, 3vw, 32px);
+}
+
+.card:hover {
+  border: 1px solid var(--primary);
+}
+
+.clickable_card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(20px, 3vw, 32px);
+}
+
+.clickable_card:hover {
+  border: 1px solid var(--primary);
+  background: var(--accent-soft);
+}

@@ -1,0 +1,27 @@
+/* =========================
+   Calculations
+   ========================= */
+
+.calculation-section {
+  display: grid;
+  gap: 4px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.openable-calculation-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.calculation-section h3 {
+  font-size: 1.05rem;
+}
+
+.calculation-section p {
+  color: var(--muted);
+  margin: 0;
+}

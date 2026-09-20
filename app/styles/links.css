@@ -1,0 +1,16 @@
+/* =========================
+   Links
+   ========================= */
+
+.nav-link {
+  display: inline-block;
+  color: var(--muted);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+  transform: scale(1.05) translateY(-1px);
+}

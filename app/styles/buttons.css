@@ -1,0 +1,120 @@
+/* =========================
+   Buttons
+   ========================= */
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: var(--primary);
+  color: white;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button-primary:hover {
+  transform: scale(1.05) translateY(-1px);
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-sm);
+  background: white;
+  color: var(--primary);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button-secondary:hover {
+  background: var(--primary);
+  color: white;
+  transform: scale(1.05) translateY(-1px);
+}
+
+/* if two or more buttons in a buttons-container class, if one of
+the secondaries is hover, primary will be set to secondary*/
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.buttons-container:has(.button-secondary:hover) .button-primary {
+  background: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.button-delete {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--danger);
+  border-radius: var(--radius-sm);
+  background: white;
+  color: var(--danger);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button-delete:hover {
+  background: var(--danger);
+  color: white;
+  transform: scale(1.05) translateY(-1px);
+}
+
+.oauth-buttons {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.google-button-container {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.oauth-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid #111;
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.oauth-button:hover {
+  transform: scale(1.02) translateY(-1px);
+  box-shadow: 0 8px 20px rgba(17, 17, 17, 0.08);
+}

@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Next.js build output & cache
+.next/
+out/
+
+# Environment variables & secrets (Never commit real keys!)
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+!.env.example
+
+# System & Editor files
+.DS_Store
+*.DS_Store
+.vscode/
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Temporary cache & logs
+.temp/
+*.log
